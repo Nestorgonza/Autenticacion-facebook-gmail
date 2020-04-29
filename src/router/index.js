@@ -19,7 +19,16 @@ const routes = [{
     path: '/ingreso',
     name: 'Ingreso',
     component: () => import( /* webpackChunkName: "about" */ '../views/Ingreso.vue')
-  }
+  },
+  {
+    path: '/admin',
+    name: 'Admin',
+    // component: Home
+    component: () => import( /* webpackChunkName: "about" */ '../views/Admin.vue'),
+    meta: {
+      requiresAuth: true
+    }
+  },
 ]
 
 const router = new VueRouter({
