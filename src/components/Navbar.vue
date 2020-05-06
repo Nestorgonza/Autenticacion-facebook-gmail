@@ -80,9 +80,10 @@ export default {
         return {
             drawer: true,
             items: [
-                { title: 'Dashboard', icon: 'far fa-address-card', to: {name:'Home'} },
-                { title: 'Account', icon: 'far fa-address-card', to: {name:'Ingreso'} },
+                { title: 'Dashboard', icon: 'fab fa-sketch', to: {name:'Home'} },
+                { title: 'Account', icon: 'fas fa-portrait', to: {name:'Ingreso'} },
                 { title: 'Admin', icon: 'far fa-address-card', to: {name:'Admin'} },
+                { title: 'Chat', icon: 'fas fa-comment-dots', to: {name:'Chat'} },
             ],
         }
     },

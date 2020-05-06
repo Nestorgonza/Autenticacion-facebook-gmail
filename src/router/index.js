@@ -29,6 +29,15 @@ const routes = [{
       requiresAuth: true
     }
   },
+  {
+    path: '/chat',
+    name: 'Chat',
+    // component: Home
+    component: () => import( /* webpackChunkName: "about" */ '../views/Chat.vue'),
+    meta: {
+      requiresAuth: true
+    }
+  },
 ]
 
 const router = new VueRouter({
